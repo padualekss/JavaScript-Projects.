@@ -1,0 +1,302 @@
+/***** GENERAL STYLING *****/
+/* Body */
+body {
+    margin: 0; /* Ensures site displays to the edge of the browser */
+    font-family: "Arial", sans-serif; /* Changed font to Arial */
+    background-color: #f0f8ff; /* Light blue background */
+}
+
+/* Heading 1 elements */
+h1 {
+    text-transform: uppercase;
+    font-family: "Verdana", sans-serif; /* Updated font family */
+    text-align: center;
+    margin-top: 3%;
+    color: #ff4500; /* Bright orange color */
+}
+
+/* Heading 1 element hover effect */
+h1:hover {
+    filter: brightness(120%);
+    transform: scale(1.1);
+    transition: transform 0.5s; /* Faster transition */
+}
+
+/* Styling for portfolio title text */
+.white-text {
+    color: #ffffff; /* Keeps white text for portfolio titles */
+}
+
+/* Paragraph elements */
+p {
+    font-family: "Georgia", serif; /* Updated font family */
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding: 0 20px; /* Simplified padding */
+    color: #333; /* Darker text color */
+}
+
+/* Paragraph element hover effect */
+p:hover {
+    color: #e20b0bea; /* Color change on hover */
+    transform: scale(1.02); /* Slightly increase size */
+    transition: color 0.5s, transform 0.5s; /* Combined transitions */
+}
+
+/* Center class */
+.center {
+    text-align: center;
+}
+
+/* Center class hover effect */
+.center:hover {
+    transform: scale(1.05); /* Slightly increase size */
+    transition: transform 0.5s; /* Faster transition */
+}
+
+/* Anchor elements */
+a {
+    color: #0066cc; /* Changed link color */
+}
+
+/* Quotation elements */
+q {
+    font-style: italic;
+}
+
+/* Image elements */
+img {
+    filter: grayscale(75%);
+    border-radius: 8px;
+    max-width: 100%;
+    height: 340px;
+    display: block;
+    margin: 0 auto; /* Centered images */
+}
+
+/* Image element hover effects */
+img:hover {
+    filter: grayscale(5%);
+    transform: scale(1.05); /* Slightly increase size */
+    transition: transform 0.5s; /* Faster transition */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 576px) {
+    img {
+        height: 100px;
+        margin-top: 150px;
+    }
+}
+
+/* Styling for footer element */
+footer {
+    padding: 2%;
+    background-color: white;
+}
+
+/***** END OF GENERAL STYLING *****/
+
+/***** NAVBAR STYLING *****/
+.Navbar {
+    overflow: hidden;
+    background-color: #333; /* Darker navbar color */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    animation: moveNav 5s; /* Animation effect */
+}
+
+/* moveNav animation */
+@keyframes moveNav {
+    from {left: -100vw;}
+    to {left: 0;}
+}
+
+/* Navbar links */
+.Navbar a {
+    float: left;
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Helvetica Neue", sans-serif; /* Updated font family */
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Screens 576px and smaller */
+@media screen and (max-width: 576px) {
+    .Navbar a {
+        width: 25%;
+        font-size: 12px;
+    }
+}
+
+/* Navbar hover effects */
+.Navbar a:hover {
+    background-color: #f4f4f4; /* Light gray background on hover */
+    color: black;
+    font-weight: bold;
+}
+
+/* Navbar active button */
+.Navbar a.active {
+    background-color: darkgray;
+}
+
+/***** END OF NAVBAR STYLING *****/
+
+/***** VIDEO STYLING *****/
+#Typing_Video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    z-index: -1;
+}
+
+/* Hide video on smaller screens */
+@media screen and (max-width: 576px) {
+    #Typing_Video {
+        display: none;
+    }
+}
+
+/* Text over the video */
+.Video_Text {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    animation: moveVideoText 5.75s;
+}
+
+/* Move video text animation */
+@keyframes moveVideoText {
+    from {top: -100vw;}
+    to {top: 0;}
+}
+
+/***** END OF VIDEO STYLING *****/
+
+/***** TABLE STYLING *****/
+* {
+    box-sizing: border-box;
+}
+
+.Column_1, .Column_2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 400px;
+}
+
+.Column_1 {
+    background-color: #f2f2f2;
+}
+
+.Column_2 {
+    background-color: #4d4d4d;
+}
+
+/* Tall column */
+.Column_tall {
+    padding-top: 3.5%;
+    height: 450px;
+}
+
+.Row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/***** END OF TABLE STYLING *****/
+
+/***** CONTACT FORM STYLING *****/
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: "Georgia", serif; /* Changed to Georgia */
+}
+
+/* Hover effects for input boxes */
+input[type=text]:hover {
+    box-shadow: 0 0 5px #00004d inset; /* Blue shadow on hover */
+}
+
+/* Submit button */
+input[type=submit] {
+    background-color: #333; /* Dark background */
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Hover effect for submit button */
+input[type=submit]:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1); /* Slightly increase size */
+    transition: transform 0.3s; /* Faster transition */
+}
+
+/* Form element */
+form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    font-family: "Trebuchet MS", sans-serif; /* Changed to Trebuchet */
+}
+.gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+/***** END OF CONTACT FORM STYLING *****/
+
+

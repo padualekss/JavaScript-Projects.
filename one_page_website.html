@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandru Chiriac</title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\padua\Desktop\Software Developer training\Website\website.css"> <!-- Link to your CSS file -->
+</head>
+<body class="Background">
+
+    <!-- Navbar -->
+    <div class="Navbar">
+        <a class="active" href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#GitHub">GitHub</a>
+        <a href="#Contact">Contact</a>
+    </div>
+
+    <br><br>
+
+    <div id="Home">
+        <video autoplay muted loop id="Typing_Video">
+            <source src="C:\Users\padua\Desktop\Software Developer training\Website\images\video\Typing.mp4" type="video/mp4"> <!-- Path to your video -->
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+    <!-- Video text -->
+    <div class="Video_Text">
+        <h1 class="white-text">Alexandru's Portfolio</h1>
+        <strong>
+            <p class="center">
+                <q>A web developer, with code as art, shapes the web from the very start.
+                    <br>With lines of HTML, CSS so fine They craft the sites where visions shine.
+                    <br>Responsive, smooth, and nice to see They bring the digital world to be.
+                <br> -Alex Chiriac
+                <br><br>
+                My name is Alex Chiriac. Welcome to my portfolio page. Here I will upload everything I learn until I become a software developer.
+                <br><br>
+                Thank you for stopping by and enjoy!
+            </p>
+        </strong>
+    </div>
+
+    <!-- About section -->
+    <div class="Row" id="About">
+        <!-- Left column -->
+        <div class="Column_2">
+            <img src="C:\Users\padua\Desktop\Software Developer training\Website\images\pexels-padrinan-2882509.jpg"> <!-- Path to"C:\Users\padua\Desktop\Software Developer training\Website\images\pexels-padrinan-2882509.jpg" your "About Me" image -->
+        </div>
+        <!-- Right column -->
+        <div class="Column_1">
+            <h1>About</h1>
+            <p>
+                I am a becoming software developer who loves to code! As a father of two, I try to balance my work-study-family life.
+                <br><br>
+                I am a student of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer program, and I wish we can work together in the future.
+                <br><br>
+                If you like my projects, you can <a href="#Contact">Contact</a> me below!
+            </p>
+        </div>
+    </div>
+
+    <!-- GitHub section -->
+    <div class="Row" id="GitHub">
+        <!-- Left column -->
+        <div class="Column_1">
+            <h1>GitHub</h1>
+            <p>You can view my coding projects on my GitHub profile here:</p>
+            <p class="center"><a href="https://github.com/padualekss" target="_blank">Alexandru's GitHub</a></p>
+        </div>
+        <!-- Right column -->
+        <div class="Column_2">
+            <a href="https://github.com/padualekss" target="_blank">
+                <img src="C:\Users\padua\Desktop\Software Developer training\Website\images\GitHub.png" alt="GitHub Logo"> <!-- Path to your GitHub logo image -->
+            </a>
+        </div>
+    </div>
+
+    <!-- Contact section -->
+    <div class="Row" id="Contact">
+        <!-- Contact image, left column -->
+        <div class="Column_2 Column_tall">
+            <img src="C:\Users\padua\Desktop\Software Developer training\Website\images\pexels-ink-drop-118789-15387699.jpg" alt="Contact Image"> <!-- Path to your contact image -->
+        </div>
+        <!-- Contact form, right column -->
+        <div class="Column_1 Column_tall">
+            <h1>Contact</h1>
+            <form action="https://formspree.io/f/xrbgznrl" method="POST"> <!-- Form action for contact form -->
+                <label for="Name">Name:</label>
+                <input type="text" id="Name" name="Name" placeholder="Please enter your name here" required>
+                
+                <label for="Email">Email:</label>
+                <input type="email" id="Email" name="Email" placeholder="Please enter your email here" required>
+                
+                <label for="Message">Message:</label>
+                <textarea id="Message" name="Message" placeholder="Please write your message here" required></textarea>
+                
+                <input type="submit" value="SUBMIT">
+            </form>
+        </div>
+    </div>
+<!-- Lightbox Gallery -->
+<div class="gallery">
+    <img src="C:\Users\padua\Desktop\Software Developer training\Website\images\A skilled developer.jpg" class="thumbnail" alt="Image 1">
+    <img src="C:\Users\padua\Desktop\Software Developer training\Website\images\Coder at Night.jpg" class="thumbnail" alt="Image 2">
+    <img src="C:\Users\padua\Desktop\Software Developer training\Website\images\Java_ A Tech Industry Heavyweight Programming Language.jpg" class="thumbnail" alt="Image 3">
+    <img src="C:\Users\padua\Desktop\Software Developer training\Website\images\Software development Programming coding software testing on laptop Abstract program code _ Premium AI-generated image.jpg" class="thumbnail" alt="Image 4">
+</div>
+
+<!-- Lightbox Modal -->
+<div class="modal" id="lightbox">
+    <img id="lightbox-img" src="" alt="Enlarged Image">
+</div>
+
+    <!-- Footer section -->
+    <footer>
+        <p class="center">&copy; Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+        <br>
+    </footer>
+    <script src="C:\Users\padua\Desktop\Software Developer training\Website\script.js"></script>
+
+</body>
+</html>
